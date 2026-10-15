@@ -68,8 +68,8 @@ html[data-theme="dark"] .cta {
     border-top: 1px solid var(--line);
 }
 
-html[data-theme="dark"] .cta .btn,
-html[data-theme="dark"] .cta .btn:hover {
+html[data-theme="dark"] .cta .btn:not(.btn--ghost),
+html[data-theme="dark"] .cta .btn:not(.btn--ghost):hover {
     color: #141413;
 }
 
