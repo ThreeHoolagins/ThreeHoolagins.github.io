@@ -2,226 +2,168 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Caleb Cunningham - Resume</title>
-        <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Resume of Caleb Cunningham, fullstack software engineer." />
+        <meta name="author" content="Caleb Cunningham" />
+        <title>Caleb Cunningham — Resume</title>
+        <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap) -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Zilla+Slab:wght@600;700&amp;display=swap" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
+        <script>
+            // Set the theme before paint so dark mode doesn't flash light
+            try {
+                const saved = localStorage.getItem("theme");
+                document.documentElement.dataset.theme = saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            } catch (e) {}
+        </script>
         <script defer src="https://analytics.bigolbearstudios.com/script.js" data-website-id="808685d0-a4b0-4a99-a79c-75417ef87800"></script>
     </head>
-    <body class="d-flex flex-column h-100 bg-light">
-        <main class="flex-shrink-0">
-            <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Caleb Cunningham</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="https://threehoolagins.github.io/devhoolagin/">Devhoolagin</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Page Content -->
-            <div class="container px-5 my-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Experience Section -->
-                        <section>
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                                <!-- Download resume button -->
-                                <!-- Note: Set the link href target to a PDF file within your project -->
-                                <a class="btn btn-primary px-4 py-3" href="assets/caleb_cunningham_software_engineer.pdf" target="_blank">
-                                    <div class="d-inline-block bi bi-download me-2"></div>
-                                    Download Resume
-                                </a>
-                            </div>
-                            <!-- Experience Card 0 -->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">Feb 2026 - July 2026</div>
-                                                <div class="small fw-bolder">Software Engineer II</div>
-                                                <div class="small text-muted">Checkr</div>
-                                                <div class="small text-muted">Denver, CO</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Streamlined account-setting logic by deprecating old settings. This reduced setting-specific support volume by ~68\% over 6 months. Upgraded Rails microservice from Rails 6 (End-of-Life) to Rails 8.1, resolving critical EOL vulnerabilities and ensuring the latest security patches, with zero downtime. Ensured system reliability of shadow mode by setting up Datadog monitors and dashboards to ensure new changes did not break old functionality.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Experience Card 1 -->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">May 2025 - Jan 2026</div>
-                                                <div class="small fw-bolder">Software Engineer I</div>
-                                                <div class="small text-muted">Angi</div>
-                                                <div class="small text-muted">United States, Remote</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Created Kafka Confluent Consumer for Event Driven Architecture in preparation for complete user migration to new platform. Actively contributed to bug fixes and feature development across 4 tech stacks including new JCN apps in java and spring boot, old JCN apps, Scala apps, and Sprint Boot apps with Kotlin across several microservices.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Experience Card 2 -->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">Mar 2025 - Apr 2025</div>
-                                                <div class="small fw-bolder">Senior Fullstack Software Developer</div>
-                                                <div class="small text-muted">Paycom</div>
-                                                <div class="small text-muted">Oklahoma City, Oklahoma / Remote</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Mentored junior developers, guiding them on code solutions and achieving personal metrics. Analyzed complex project specifications to break down tasks effectively, ensuring timely project releases. Conducted in-depth research on client-affecting bugs, resolving them within an 8-hour SLA.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Experience Card 3 -->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">Nov 2022 - Mar 2025</div>
-                                                <div class="small fw-bolder">Fullstack Software Developer</div>
-                                                <div class="small text-muted">Paycom</div>
-                                                <div class="small text-muted">Oklahoma City, Oklahoma / Remote</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Lead migration of C# microservice from .Net Framework to .Net Standard for containerization, involving over 300 controllers or services and 1,000 unit tests. Designed a new employee tutorial feature including MySQL tables for C services in containers and React.js views. Transformed legacy employee website from Angular.js and PHP to React.js, PHP, and C#, catering to desktop and mobile views. Collaborated in a cross-functional team with product owners, QA, and customer relations, utilizing Jira and Confluence in Agile and Scrumban methodologies. Handled maintenance and development of legacy system, addressing 75+ customer-facing bugs and security vulnerabilities using PHP, Angular.js, HTML, CSS, and Javascript.Delivered code presentations and conducted code reviews on GitLab.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Experience Card 4 -->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">Jun 2021 - Jul 2022</div>
-                                                <div class="small fw-bolder">Backend Software Engineer</div>
-                                                <div class="small text-muted">Sift Science</div>
-                                                <div class="small text-muted">United States, Remote</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Architected new Data Warehouse according to Data Vault 2.0 Schema for Dispute management product using cloud-based Snowflake and GCP hosted Apache Airflow ETL Pipeline to fit new Schema. Integrated HashiCorp Vault authentication into Flyway process to remove plaintext secrets from our Data Warehouse management process. Designed and implemented weekly data privacy pipeline using Python, Apache Airflow and Dropbox's API General Data Protection Regulation (GDPR) Right to Access (RTA) and Right to Object (RTO) processes, which saved hours of weekly engineer time and ensured Sift met GDPR SLAs for RTA requests. Optimized GDPR churned customer pipeline by restructuring Airflow DAG to reduce average weekly runtime by 30%.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Education Section-->
-                        <section>
-                            <h2 class="text-secondary fw-bolder mb-4">Education</h2>
-                            <!-- Education Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2017 - 2022</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">Oklahoma State University</div>
-                                                    <div class="small text-muted">Stillwater, Oklahoma</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Undergraduate</div>
-                                                    <div class="small text-muted">Computer Engineering</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Studied Eletrical and Computer Engineering subjects, from semiconductor physics to circuits to database structures. Recieved Minor in computer science.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Divider-->
-                        <div class="pb-5"></div>
-                        <!-- Skills Section-->
-                        <section>
-                            <!-- Skillset Card-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <!-- Professional skills list-->
-                                    <div class="mb-5">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Front-End Development</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Database Architecture</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Back-End Development</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Bug Hunting</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">GDPR Compliance</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Snowflake</div></div>
-                                        </div>
-                                    </div>
-                                    <!-- Languages list-->
-                                    <div class="mb-0">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">PHP</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">C#</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Java</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SQL</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
+    <body>
+        <!-- Navigation-->
+        <nav class="site-nav">
+            <div class="container inner">
+                <a class="brand" href="index.html"><span class="prompt">~/caleb</span> $<span class="cursor" aria-hidden="true"></span></a>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="resume.html" aria-current="page">resume</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="https://threehoolagins.github.io/devhoolagin/" target="_blank" rel="noopener">devhoolagin ↗</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
             </div>
+        </nav>
+        <main>
+            <header class="page-head">
+                <div class="container narrow row">
+                    <div>
+                        <p class="eyebrow">// resume</p>
+                        <h1>Experience</h1>
+                        <p class="lede">Five years across B2B SaaS, digital marketplaces, and background checks. From fullstack to data pipelines.</p>
+                    </div>
+                    <a class="btn" href="https://github.com/ThreeHoolagins/calebcunninghamresume/releases/latest/download/caleb_cunningham_resume.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+                </div>
+            </header>
+            <section class="container narrow" style="padding-bottom: 4.5rem">
+                <h2 class="section-title">work</h2>
+                <ol class="timeline">
+                    <li class="job">
+                        <div>
+                            <div class="job__when">Feb 2026 – Jul 2026</div>
+                            <div class="job__where">Hybrid, Denver, CO</div>
+                        </div>
+                        <div>
+                            <h3>Software Engineer</h3>
+                            <div class="company">Checkr</div>
+                            <ul>
+                                <li>Streamlined account-setting logic by deprecating old settings, reducing setting-specific support volume by ~68% over 6 months.</li>
+                                <li>Upgraded a Rails microservice from Rails 6 (end-of-life) to Rails 8.1, resolving critical EOL vulnerabilities with zero downtime.</li>
+                                <li>Ensured reliability of shadow mode by setting up Datadog monitors and dashboards so new changes didn't break old functionality.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="job">
+                        <div>
+                            <div class="job__when">Apr 2025 – Jan 2026</div>
+                            <div class="job__where">Remote</div>
+                        </div>
+                        <div>
+                            <h3>Software Engineer</h3>
+                            <div class="company">Angi</div>
+                            <ul>
+                                <li>Created a Kafka (Confluent) consumer for event-driven architecture in preparation for a complete user migration to a new platform.</li>
+                                <li>Delivered bug fixes and feature development across four tech stacks (Java/Spring Boot, legacy JCN apps, Scala, and Spring Boot with Kotlin) spanning several microservices.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="job">
+                        <div>
+                            <div class="job__when">Oct 2022 – Apr 2025</div>
+                            <div class="job__where">Hybrid, Oklahoma City, OK</div>
+                        </div>
+                        <div>
+                            <h3>Senior Software Developer</h3>
+                            <div class="company">Paycom</div>
+                            <ul>
+                                <li>Mentored junior developers on code solutions and on hitting their personal metrics.</li>
+                                <li>Analyzed complex project specifications and broke them into well-scoped tasks to keep releases on time.</li>
+                                <li>Researched client-affecting bugs in depth and resolved them within an 8-hour SLA.</li>
+                            </ul>
+                            <h3 class="job__role">Software Developer</h3>
+                            <ul>
+                                <li>Led migration of a C# microservice from .NET Framework to .NET Standard for containerization, covering 300+ controllers/services and 1,000 unit tests.</li>
+                                <li>Designed a new employee tutorial feature end to end: MySQL tables, containerized C# services, and React.js views.</li>
+                                <li>Rebuilt the legacy employee website from Angular.js and PHP to React.js, PHP and C#, for both desktop and mobile.</li>
+                                <li>Fixed 75+ customer-facing bugs and security vulnerabilities in the legacy system (PHP, Angular.js, HTML, CSS, JavaScript).</li>
+                                <li>Worked cross-functionally with product, QA and customer relations in Agile/Scrumban using Jira and Confluence; gave code presentations and reviewed code on GitLab.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="job">
+                        <div>
+                            <div class="job__when">Jun 2021 – Jul 2022</div>
+                            <div class="job__where">Remote</div>
+                        </div>
+                        <div>
+                            <h3>Backend Software Engineer</h3>
+                            <div class="company">Sift</div>
+                            <ul>
+                                <li>Architected a new Data Vault 2.0 data warehouse for the dispute management product using Snowflake and a GCP-hosted Apache Airflow ETL pipeline.</li>
+                                <li>Integrated HashiCorp Vault authentication into the Flyway process, removing plaintext secrets from data warehouse management.</li>
+                            </ul>
+                            <h3 class="job__role">Software Engineering Intern</h3>
+                            <ul>
+                                <li>Built a weekly GDPR Right to Access / Right to Object pipeline with Python, Airflow and the Dropbox API, saving hours of engineer time each week and keeping Sift within GDPR SLAs.</li>
+                                <li>Restructured the churned-customer GDPR Airflow DAG, cutting average weekly runtime by 30%.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+
+                <h2 class="section-title">education</h2>
+                <div class="job">
+                    <div>
+                        <div class="job__when">2017 – 2022</div>
+                        <div class="job__where">Stillwater, OK</div>
+                    </div>
+                    <div>
+                        <h3>B.S. Computer Engineering</h3>
+                        <div class="company">Oklahoma State University</div>
+                        <p class="muted">Software engineering specialization, minor in computer science. Everything from semiconductor physics and circuits to data structures and databases.</p>
+                    </div>
+                </div>
+
+                <h2 class="section-title">toolbox</h2>
+                <div class="skills">
+                    <div class="card">
+                        <h3>Languages</h3>
+                        <ul class="tags"><li>C#</li><li>JavaScript</li><li>PHP</li><li>Java</li><li>Kotlin</li><li>Ruby</li><li>Python</li><li>SQL</li></ul>
+                    </div>
+                    <div class="card">
+                        <h3>Frameworks &amp; infra</h3>
+                        <ul class="tags"><li>React</li><li>Rails</li><li>Spring Boot</li><li>Kafka</li><li>Snowflake</li><li>Airflow</li></ul>
+                    </div>
+                </div>
+            </section>
         </main>
         <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Big Ol' Bear Studios 2026</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="contact.html">Contact</a>
-                    </div>
-                </div>
+        <footer class="site-footer">
+            <div class="container inner">
+                <div>Copyright <a class="secret" href="./applicationHelper.html">&copy;</a> Big Ol' Bear Studios 2026</div>
+                <ul>
+                    <li><a href="https://github.com/ThreeHoolagins" target="_blank" rel="noopener">github</a></li>
+                    <li><a href="https://www.linkedin.com/in/calebbcunningham/" target="_blank" rel="noopener">linkedin</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li>
+                        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" /></svg>
+                            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
 </html>

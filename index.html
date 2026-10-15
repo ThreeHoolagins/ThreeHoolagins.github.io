@@ -2,216 +2,140 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Caleb Cunningham's Portfolio</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Caleb Cunningham — senior fullstack engineer who builds features end to end, from React views to services and data." />
+        <meta name="author" content="Caleb Cunningham" />
+        <title>Caleb Cunningham — Fullstack Engineer</title>
+        <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Zilla+Slab:wght@600;700&amp;display=swap" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
+        <script>
+            // Set the theme before paint so dark mode doesn't flash light
+            try {
+                const saved = localStorage.getItem("theme");
+                document.documentElement.dataset.theme = saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            } catch (e) {}
+        </script>
         <script defer src="https://analytics.bigolbearstudios.com/script.js" data-website-id="808685d0-a4b0-4a99-a79c-75417ef87800"></script>
     </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Caleb Cunningham</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="https://threehoolagins.github.io/devhoolagin/">Devhoolagin</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
+    <body>
+        <!-- Navigation-->
+        <nav class="site-nav">
+            <div class="container inner">
+                <a class="brand" href="index.html"><span class="prompt">~/caleb</span> $<span class="cursor" aria-hidden="true"></span></a>
+                <ul>
+                    <li><a href="index.html" aria-current="page">home</a></li>
+                    <li><a href="resume.html">resume</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="https://threehoolagins.github.io/devhoolagin/" target="_blank" rel="noopener">devhoolagin ↗</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <!-- Hero-->
+            <header class="hero">
+                <div class="container inner">
+                    <div>
+                        <p class="eyebrow">// open to senior fullstack roles</p>
+                        <h1>Thanks for checking me out. Let's make software <span class="hl">better for everyone involved.</span></h1>
+                        <p class="lede">I've spent the last five years working across a lot of different stacks: .NET/PHP with React SPAs, Spring Boot microservices, Ruby on Rails, event streams, and the databases underneath them. Regardless of stack, I believe end users deserve software that works, and that works well.</p>
+                        <div class="actions">
+                            <a class="btn" href="resume.html">View resume</a>
+                            <a class="btn btn--ghost" href="projects.html">Projects</a>
+                        </div>
                     </div>
-                </div>
-            </nav>
-            <!-- Header-->
-            <header class="py-5">
-                <div class="container px-5 pb-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-xxl-5">
-                            <!-- Header text content-->
-                            <div class="text-center text-xxl-start">
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Front-End &middot; Back-End &middot; Database Architecture</div></div>
-                                <div class="fs-3 fw-light text-muted">Hi, I'm Caleb.</div>
-                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">I like to build things.</span></h1>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
-                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-7">
-                            <!-- Header profile picture-->
-                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                                <div class="profile bg-gradient-primary-to-secondary">
-                                    <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
-                                    <!-- Watch a tutorial on how to do this on YouTube (link)-->
-                                    <img class="profile-img" src="assets/profile.png" alt="..." />
-                                    <div class="dots-1">
-                                        <!-- SVG Dots-->
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
-                                            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                                <path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"></path>
-                                                <path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"></path>
-                                                <path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"></path>
-                                                <path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"></path>
-                                                <path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"></path>
-                                                <path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"></path>
-                                                <path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"></path>
-                                                <path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"></path>
-                                                <path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"></path>
-                                                <path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"></path>
-                                                <path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"></path>
-                                                <path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"></path>
-                                                <path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"></path>
-                                                <path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"></path>
-                                                <path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"></path>
-                                                <path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"></path>
-                                                <path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"></path>
-                                                <path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"></path>
-                                                <path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"></path>
-                                                <path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"></path>
-                                            </g>
-                                        </svg>
-                                        <!-- END of SVG dots-->
-                                    </div>
-                                    <div class="dots-2">
-                                        <!-- SVG Dots-->
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
-                                            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                                <path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"></path>
-                                                <path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"></path>
-                                                <path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"></path>
-                                                <path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"></path>
-                                                <path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"></path>
-                                                <path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"></path>
-                                                <path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"></path>
-                                                <path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"></path>
-                                                <path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"></path>
-                                                <path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"></path>
-                                                <path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"></path>
-                                                <path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"></path>
-                                                <path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"></path>
-                                                <path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"></path>
-                                                <path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"></path>
-                                                <path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"></path>
-                                                <path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"></path>
-                                                <path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"></path>
-                                                <path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"></path>
-                                                <path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"></path>
-                                            </g>
-                                        </svg>
-                                        <!-- END of SVG dots-->
-                                    </div>
-                                    <div class="dots-3">
-                                        <!-- SVG Dots-->
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
-                                            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                                <path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"></path>
-                                                <path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"></path>
-                                                <path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"></path>
-                                                <path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"></path>
-                                                <path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"></path>
-                                                <path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"></path>
-                                                <path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"></path>
-                                                <path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"></path>
-                                                <path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"></path>
-                                                <path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"></path>
-                                                <path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"></path>
-                                                <path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"></path>
-                                                <path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"></path>
-                                                <path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"></path>
-                                                <path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"></path>
-                                                <path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"></path>
-                                                <path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"></path>
-                                                <path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"></path>
-                                                <path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"></path>
-                                                <path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"></path>
-                                            </g>
-                                        </svg>
-                                        <!-- END of SVG dots-->
-                                    </div>
-                                    <div class="dots-4">
-                                        <!-- SVG Dots-->
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
-                                            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                                <path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"></path>
-                                                <path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"></path>
-                                                <path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"></path>
-                                                <path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"></path>
-                                                <path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"></path>
-                                                <path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"></path>
-                                                <path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"></path>
-                                                <path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"></path>
-                                                <path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"></path>
-                                                <path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"></path>
-                                                <path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"></path>
-                                                <path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"></path>
-                                                <path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"></path>
-                                                <path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"></path>
-                                                <path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"></path>
-                                                <path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"></path>
-                                                <path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"></path>
-                                                <path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"></path>
-                                                <path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"></path>
-                                                <path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"></path>
-                                            </g>
-                                        </svg>
-                                        <!-- END of SVG dots-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="terminal" role="img" aria-label="A terminal showing a short profile of Caleb">
+                        <div class="terminal__bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="title">caleb@fort-collins: ~</span></div>
+<pre><span class="t-prompt">$</span> cat caleb_cunningham.json
+{
+  <span class="t-key">"role"</span>: <span class="t-str">"Senior Fullstack Engineer"</span>,
+  <span class="t-key">"based"</span>: <span class="t-str">"Fort Collins, CO"</span>,
+  <span class="t-key">"stack"</span>: [<span class="t-str">"React"</span>, <span class="t-str">"C#/.NET"</span>, <span class="t-str">"SQL"</span>],
+  <span class="t-key">"good_at"</span>: [<span class="t-str">"legacy migrations"</span>,
+              <span class="t-str">"feature delivery"</span>,
+              <span class="t-str">"leaving code nicer"</span>],
+  <span class="t-key">"why"</span>: <span class="t-str">"software should help people"</span>
+}
+<span class="t-prompt">$</span> <span class="t-mute">_</span></pre>
                     </div>
                 </div>
             </header>
-            <!-- About Section-->
-            <section class="bg-light py-5">
-                <div class="container px-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-xxl-8">
-                            <div class="text-center my-5">
-                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-                                <p class="lead fw-light mb-4">For the most up to date and complete work history, please check my Linkedin.</p>
-                                <p class="text-muted">I suppose now is a good time for introductions! My name is Caleb Cunningham, I'm a Software Engineer Intrigued with data, who wants to put their skills towards bettering our digital and physical world for everyone.</p>
-                                <p class="text-muted">I <i>technically </i>  """know""" <a class="text-gradient" href="https://github.com/ThreeHoolagins/hello-universe" target="_blank">every programming language</a>, but my prefered lanuages are in the resume page.</p>
-                                <p class="text-muted">I'm a cat parent of two <a class="text-gradient" href="./assets/mytwoadorablecats.jpg" target="_blank">adoreable cats</a>, A dungeon master of nearly a decade, and someone passonate about clean solutions that improve people's lives.</p>
-                                <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <a class="text-gradient" href="https://www.linkedin.com/in/calebbcunningham/"><i class="bi bi-linkedin"></i></a>
-                                    <a class="text-gradient" href="https://github.com/ThreeHoolagins"><i class="bi bi-github"></i></a>
-                                </div>
-                            </div>
+            <!-- Big Ol' Bear Studios-->
+            <section class="section section--alt">
+                <div class="container">
+                    <div class="studio-head">
+                        <img class="studio-head__logo" src="https://bigolbearstudios.github.io/images/logo-mark.png" alt="" />
+                        <div>
+                            <p class="eyebrow">// big ol' bear studios</p>
+                            <h2>Small studio. Big work.</h2>
                         </div>
+                    </div>
+                    <p class="lede">Outside the day job I run <a href="https://bigolbearstudios.github.io" target="_blank" rel="noopener">Big Ol' Bear Studios</a>, a one-bear shop out of Northern Colorado.</p>
+                    <a class="teaser" href="https://bigolbearstudios.github.io/focodeathon" target="_blank" rel="noopener">
+                        <span class="teaser__todo">// TODO: announce FoCodeathon</span>
+                        <span class="teaser__body">Something's brewing in Fort Collins. Bring a laptop and a snack. <span class="teaser__link">peek behind the tape ↗</span></span>
+                    </a>
+                </div>
+            </section>
+            <!-- About-->
+            <section class="section">
+                <div class="container about">
+                    <div class="about__photo"><img src="assets/profile.png" alt="Caleb Cunningham" /></div>
+                    <div>
+                        <p class="eyebrow">// about</p>
+                        <h2>A little more about me.</h2>
+                        <p>Hi! I'm a software engineer based out of Fort Collins, Colorado and I've worked on accruals software at Paycom, on the auth behind Angi's digital marketplace, on background checks at Checkr, and on GDPR compliance at Sift. Regardless of vertical or job role, my favorite work has always been helping others on my team and delivering high-quality software.</p>
+                        <p>Outside of work I have two very <a href="assets/mytwoadorablecats.jpg" target="_blank" rel="noopener">wonderful cats</a>, I've been a dungeon master for over a decade, and I write about side projects on <a href="https://threehoolagins.github.io/devhoolagin/">devhoolagin</a>.</p>
+                        <p>If you're looking for someone who:</p>
+                        <ul class="principles">
+                            <li><strong>Cares about the user experience.</strong> As much as anyone who spends time online, I know how bad it feels when software you use degrades in usability, performance, and quality. I want everything I work on to get better in all of those dimensions.</li>
+                            <li><strong>Leaves it better than I found it.</strong> Deleting old features while I work on new ones, and re-architecting small sections to keep them maintainable down the road. In the words of David Thomas and Andrew Hunt: &ldquo;Don't leave broken windows unrepaired. Fix each one as soon as it is discovered.&rdquo;</li>
+                            <li><strong>Lifts up their team.</strong> Five minutes of my time could save hours of yours. I want to lift up the people around me, because we're better as a team than as a set of individuals.</li>
+                        </ul>
+                        <p style="margin-top: 1.5rem">I might be your guy!</p>
+                        <p>For the most up-to-date version of my work history, check my <a href="https://www.linkedin.com/in/calebbcunningham/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+                        <div class="socials">
+                            <a href="https://www.linkedin.com/in/calebbcunningham/" target="_blank" rel="noopener">linkedin ↗</a>
+                            <a href="https://github.com/ThreeHoolagins" target="_blank" rel="noopener">github ↗</a>
+                            <a href="https://threehoolagins.github.io/devhoolagin/" target="_blank" rel="noopener">devhoolagin ↗</a>
+                            <a href="https://github.com/ThreeHoolagins/calebcunninghamresume/releases/latest/download/caleb_cunningham_resume.pdf" target="_blank" rel="noopener">resume.pdf ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- CTA-->
+            <section class="section cta">
+                <div class="container narrow">
+                    <p class="eyebrow">// hiring?</p>
+                    <h2>Do I fit a role you're hiring for?</h2>
+                    <p>I'd love to hear about it.</p>
+                    <div class="actions">
+                        <a class="btn" href="contact.html">Get in touch</a>
+                        <a class="btn btn--ghost" href="https://github.com/ThreeHoolagins/calebcunninghamresume/releases/latest/download/caleb_cunningham_resume.pdf" target="_blank" rel="noopener">Download resume</a>
                     </div>
                 </div>
             </section>
         </main>
         <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright <a href="./applicationHelper.html" style="text-decoration: none; color: inherit; cursor: text;">&copy;</a> Big Ol' Bear Studios 2026</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="contact.html">Contact</a>
-                    </div>
-                </div>
+        <footer class="site-footer">
+            <div class="container inner">
+                <div>Copyright <a class="secret" href="./applicationHelper.html">&copy;</a> Big Ol' Bear Studios 2026</div>
+                <ul>
+                    <li><a href="https://github.com/ThreeHoolagins" target="_blank" rel="noopener">github</a></li>
+                    <li><a href="https://www.linkedin.com/in/calebbcunningham/" target="_blank" rel="noopener">linkedin</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li>
+                        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" /></svg>
+                            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
 </html>

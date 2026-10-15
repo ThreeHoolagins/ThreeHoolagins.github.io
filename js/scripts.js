@@ -1,11 +1,22 @@
-/*!
-* Start Bootstrap - Personal v1.0.1 (https://startbootstrap.com/template-overviews/personal)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-personal/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+// Copy-to-clipboard buttons: <button data-copy="text">Label <span class="hint">copy</span></button>
+document.querySelectorAll("[data-copy]").forEach((button) => {
+    const hint = button.querySelector(".hint");
 
-function copyText(text) {
-  navigator.clipboard.writeText(text);
-}
+    button.addEventListener("click", async () => {
+        await navigator.clipboard.writeText(button.dataset.copy);
+        if (!hint) return;
+        hint.textContent = "copied ✓";
+        setTimeout(() => (hint.textContent = "copy"), 1500);
+    });
+});
+
+// Footer theme toggle: flips <html data-theme> and remembers the choice
+document.querySelectorAll(".theme-toggle").forEach((button) => {
+    button.addEventListener("click", () => {
+        const root = document.documentElement;
+        root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
+        try {
+            localStorage.setItem("theme", root.dataset.theme);
+        } catch (e) {}
+    });
+});
