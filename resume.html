@@ -40,9 +40,9 @@
                     <div>
                         <p class="eyebrow">// resume</p>
                         <h1>Experience</h1>
-                        <p class="lede">Five years across B2B SaaS, digital marketplaces, and background checks. From fullstack to data pipelines.</p>
+                        <p class="lede">Five years modernizing legacy systems and de-risking high-stakes changes. I turn ambiguous problems into clear plans, own them end to end, and help the engineers around me grow.</p>
                     </div>
-                    <a class="btn" href="https://github.com/ThreeHoolagins/calebcunninghamresume/releases/latest/download/caleb_cunningham_resume.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+                    <a class="btn" href="assets/caleb_cunningham_senior_software_engineer.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
                 </div>
             </header>
             <section class="container narrow" style="padding-bottom: 4.5rem">
@@ -54,12 +54,12 @@
                             <div class="job__where">Hybrid, Denver, CO</div>
                         </div>
                         <div>
-                            <h3>Software Engineer</h3>
+                            <h3>Software Engineer II</h3>
                             <div class="company">Checkr</div>
                             <ul>
-                                <li>Streamlined account-setting logic by deprecating old settings, reducing setting-specific support volume by ~68% over 6 months.</li>
-                                <li>Upgraded a Rails microservice from Rails 6 (end-of-life) to Rails 8.1, resolving critical EOL vulnerabilities with zero downtime.</li>
-                                <li>Ensured reliability of shadow mode by setting up Datadog monitors and dashboards so new changes didn't break old functionality.</li>
+                                <li>Led a shadow-mode rollout of a lower-cost address data vendor (feature flags, rollbacks, Datadog) to 100% of eligible reports with no regressions; analysis of the results surfaced data-quality risks that reshaped the future of the rollout strategy.</li>
+                                <li>Deprecated legacy account-settings logic, reducing manual review volume by 68%.</li>
+                                <li>Upgraded a Rails microservice from Rails 6 (EOL) to 8.1 with zero downtime, resolving critical security vulnerabilities.</li>
                             </ul>
                         </div>
                     </li>
@@ -72,7 +72,7 @@
                             <h3>Software Engineer</h3>
                             <div class="company">Angi</div>
                             <ul>
-                                <li>Created a Kafka (Confluent) consumer for event-driven architecture in preparation for a complete user migration to a new platform.</li>
+                                <li>Collaborated with staff engineers on a company-wide transition from microservices to an event-driven modular monolith (modulith) architecture during RFC decision forums, helping design and implement a zero-downtime account data migration using Kafka event schemas and consumers.</li>
                                 <li>Delivered bug fixes and feature development across four tech stacks (Java/Spring Boot, legacy JCN apps, Scala, and Spring Boot with Kotlin) spanning several microservices.</li>
                             </ul>
                         </div>
@@ -83,18 +83,15 @@
                             <div class="job__where">Hybrid, Oklahoma City, OK</div>
                         </div>
                         <div>
-                            <h3>Senior Software Developer</h3>
+                            <h3>Senior Fullstack Software Engineer</h3>
                             <div class="company">Paycom</div>
                             <ul>
+                                <li>Led migration of a C# microservice from .NET Framework to .NET Standard for containerization, covering 300+ controllers/services and 1,000+ unit tests, turning previously failing tests into passing tests in the new re-architected state.</li>
+                                <li>Designed a new employee tutorial feature end to end: MySQL tables, containerized C# REST API, and TypeScript/React.js views.</li>
+                                <li>Rebuilt the legacy employee website from Angular.js and PHP to React.js with TypeScript and Redux, PHP and C#, for both desktop and mobile using our internal component library with loading and error-state handling.</li>
                                 <li>Mentored junior developers on code solutions and on hitting their personal metrics.</li>
                                 <li>Analyzed complex project specifications and broke them into well-scoped tasks to keep releases on time.</li>
                                 <li>Researched client-affecting bugs in depth and resolved them within an 8-hour SLA.</li>
-                            </ul>
-                            <h3 class="job__role">Software Developer</h3>
-                            <ul>
-                                <li>Led migration of a C# microservice from .NET Framework to .NET Standard for containerization, covering 300+ controllers/services and 1,000 unit tests.</li>
-                                <li>Designed a new employee tutorial feature end to end: MySQL tables, containerized C# services, and React.js/TypeScript views.</li>
-                                <li>Rebuilt the legacy employee website from Angular.js and PHP to React.js/TypeScript, PHP and C#, for both desktop and mobile.</li>
                                 <li>Fixed 75+ customer-facing bugs and security vulnerabilities in the legacy system (PHP, Angular.js, HTML, CSS, JavaScript).</li>
                                 <li>Worked cross-functionally with product, QA and customer relations in Agile/Scrumban using Jira and Confluence; gave code presentations and reviewed code on GitLab.</li>
                             </ul>
@@ -130,19 +127,42 @@
                     <div>
                         <h3>B.S. Computer Engineering</h3>
                         <div class="company">Oklahoma State University</div>
-                        <p class="muted">Software engineering specialization, minor in computer science. Everything from semiconductor physics and circuits to data structures and databases.</p>
+                        <p class="muted">Software Engineering Specialization, Minor in Computer Science</p>
                     </div>
                 </div>
 
                 <h2 class="section-title">toolbox</h2>
                 <div class="skills">
                     <div class="card">
-                        <h3>Languages</h3>
-                        <ul class="tags"><li>C#</li><li>JavaScript</li><li>PHP</li><li>Java</li><li>Kotlin</li><li>Ruby</li><li>Python</li><li>SQL</li></ul>
+                        <h3>Frontend</h3>
+                        <ul class="tags"><li>React</li><li>TypeScript</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Redux</li><li>Axios</li></ul>
                     </div>
                     <div class="card">
-                        <h3>Frameworks &amp; infra</h3>
-                        <ul class="tags"><li>React</li><li>Rails</li><li>Spring Boot</li><li>Kafka</li><li>Snowflake</li><li>Airflow</li></ul>
+                        <h3>Backend</h3>
+                        <ul class="tags"><li>C#</li><li>PHP</li><li>SQL</li><li>Python</li><li>Java</li><li>Ruby</li><li>.NET Core</li><li>Spring Boot</li><li>Ruby on Rails</li></ul>
+                    </div>
+                    <div class="card">
+                        <h3>Infra</h3>
+                        <ul class="tags"><li>Snowflake</li><li>Apache Airflow</li><li>GCP</li></ul>
+                    </div>
+                    <div class="card">
+                        <h3>AI / agentic tools</h3>
+                        <ul class="tags"><li>Claude Code</li><li>Cursor</li><li>OpenCode</li><li>Granola</li></ul>
+                    </div>
+                </div>
+
+                <h2 class="section-title">awards</h2>
+                <div class="job">
+                    <div>
+                        <div class="job__when">2024 – 2025</div>
+                        <div class="job__where">Oklahoma City, OK</div>
+                    </div>
+                    <div>
+                        <h3>Paycom Hackathon</h3>
+                        <ul>
+                            <li>Most Innovative – 2025</li>
+                            <li>Most Value to Clients – 2024</li>
+                        </ul>
                     </div>
                 </div>
             </section>
