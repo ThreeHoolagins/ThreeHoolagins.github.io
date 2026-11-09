@@ -488,18 +488,13 @@ code,
 
 /* FoCodeathon teaser: caution-tape strip */
 .teaser {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.25rem 1rem;
     margin-top: 1.5rem;
-    padding: 1.4rem 1.4rem 1.1rem;
+    padding: 1.6rem 1.4rem 1.3rem;
     position: relative;
     border: 2px dashed var(--ink);
     border-radius: var(--radius);
     background: var(--paper);
     color: var(--ink);
-    text-decoration: none;
     overflow: hidden;
     transition: transform 0.12s, box-shadow 0.12s;
 }
@@ -515,9 +510,16 @@ code,
 }
 
 .teaser:hover {
-    color: var(--ink);
     transform: translate(-1px, -1px);
     box-shadow: 4px 4px 0 var(--accent);
+}
+
+.teaser__logo {
+    display: block;
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+    margin: 0.25rem 0 1rem;
 }
 
 .teaser__todo {
@@ -525,18 +527,67 @@ code,
     font-size: 0.9rem;
     font-weight: 700;
     color: var(--accent);
+    margin: 0 0 0.35rem;
+}
+
+.teaser__title {
+    margin: 0 0 0.5rem;
 }
 
 .teaser__body {
     color: var(--ink-soft);
+    margin: 0 0 0.9rem;
+}
+
+.teaser__meta {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1.5rem;
+    font-size: 0.95rem;
+}
+
+.teaser__meta span {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--accent);
+    margin-right: 0.35rem;
+}
+
+.teaser__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
 }
 
 .teaser__link {
     font-family: var(--font-mono);
     font-size: 0.88rem;
     font-weight: 500;
-    color: var(--accent);
+    color: var(--ink);
     white-space: nowrap;
+    padding: 0.35rem 0.75rem;
+    border: 2px solid var(--ink);
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.teaser__link:hover {
+    color: var(--ink);
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0 var(--accent);
+}
+
+.teaser__link:first-child {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.teaser__link:first-child:hover {
+    color: var(--paper);
 }
 
 .principles {
