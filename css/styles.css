@@ -852,6 +852,29 @@ code,
     color: var(--ink-soft);
 }
 
+.page-head .ai-legend {
+    margin: 1.5rem 0 0;
+}
+
+/* Big Ol' Bear Studios mark: consulting/client projects */
+.studio-mark {
+    display: inline-block;
+    width: auto;
+    height: 1.2em;
+    vertical-align: -0.25em;
+}
+
+html[data-theme="dark"] .studio-mark {
+    filter: invert(1);
+}
+
+.studio-mark--corner {
+    position: absolute;
+    right: 1.4rem;
+    bottom: 1.4rem;
+    height: 1.75rem;
+}
+
 .note {
     font-size: 0.95rem;
     color: var(--ink-soft);
